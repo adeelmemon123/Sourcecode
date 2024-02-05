@@ -1,0 +1,170 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  background-image: url('../../Assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+  .left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .left-login h1 {
+    color: #000;
+  }
+  
+  .main-container {
+    display: flex;
+    margin-right: 12%;
+  }
+  
+  .right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-color: #29A095;
+    border-width: 3px; /* Adjust the border width to show the border color */
+    border-style: solid; 
+
+  }
+  
+  .card-login h1 {
+    color: #000;
+    font-weight: 500;
+    margin: 0;
+  }
+  .black-text {
+    color: #3F4254;
+    margin-right: 10px;
+  }
+  
+  .green-text {
+    color: #29A095;
+    
+  }
+  
+  h6 {
+    font-weight: normal; /* Set the font weight to normal */
+  }
+  h4 {
+    font-weight: 500; /* Set the font weight to medium */
+  }  
+  .centered-text {
+    text-align: justify; /* Adjust alignment according to your preference */
+    margin-left: 10%; /* Adjust the value according to your preference */
+    margin-right: 10%;
+  }
+  
+  .chart{
+    width: 45%; /* Fill the container */
+    height: auto; 
+  }
+  
+  
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0px;
+  }
+  
+  .form-field {
+    width: 150%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    font-size: 12pt;
+    box-shadow: 0px 5px 10px #00000056;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .mega {
+    margin-top: 5%;
+  
+  }
+  
+  .form-group label {
+    color: #fff;
+    margin-bottom: 10px;
+  
+  }
+  
+  .form-error {
+    display: block;
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .form-field ::placeholder {
+    color: #f0ffff94;
+  }
+  
+  .button {
+    width: 150%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    background: #29A095;
+    color: white;
+  
+  }
+  
+  @media (max-width: 950px){
+    .card-login{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px){
+    .body{
+      flex-direction: column;
+    }
+  
+    .left-login {
+      width: 100%;
+      height: auto;
+    }
+  
+    .right-login {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-login {
+      width: 90%;
+      
+    }
+  }
+  
