@@ -8,24 +8,25 @@
   
   .right {
     display: flex;
+    align-items: center;
   }
 
   .icon {
     font-size: 1.5rem;
-    margin-right: 24px;
     cursor: pointer;
     color: #000;
   }
+
   .input-container {
     position: relative;
-    width: 300px;
+    width: 280px;
 /* Adjust width as needed */
   }
   .search-icon {
     position: absolute;
     top: 50%;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     transform: translateY(-50%);
     left: 8px; /* Adjust left position as needed */
     color: #000; /* Adjust color as needed */
@@ -35,10 +36,14 @@
     width: 100%;
     box-sizing: border-box;
   }
+  .search-input::placeholder {
+    color: gray;
+  }
+  
   input[type='text'] {
     padding: 8px;
     padding-left: 30px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 1rem;
     width: 300px;
@@ -50,3 +55,34 @@
     border-color:#29A095;
   }
   
+
+  .dropdown-menu {
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    width: 6%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .dropdown-menu ul li:hover {
+    background-color: #f0f0f0;
+  }
+  .badge-container,
+  .profile-container {
+    margin-right: 20px; /* Adjust the margin according to your preference */
+  }

@@ -19,7 +19,7 @@
   color: white;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  margin-left:4%;
+  
 }
 
 .header2 {
@@ -30,10 +30,12 @@
   color: white;
   padding: 10px 20px;
   margin-left: 17%;/* Adding a black border to the bottom */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ /* Adding a shadow */
 }
 
 @media screen and (max-width: 768px) {
+ 
   .header {
     display: flex;
     justify-content: space-between;
@@ -57,6 +59,49 @@
   }
 
 }
+
+
+@media (min-width: 1200px) {
+  .header2 {
+    margin-left:17%;
+  }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header2 {
+    margin-left:23%;
+  }
+
+}
+
+/* Medium Devices (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header2 {
+    margin-left:28%;
+  }
+
+}
+
+/* Small Devices (sm) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .header2 {
+    margin-left:28%;
+  }
+ 
+}
+
+/* Extra Small Devices (xs) */
+@media (max-width: 575px) {
+  .header2 {
+    margin-left:48%;
+  }
+
+}
+
+
 .selected-item {
   background: white;
   color: #29A095;
